@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="./script.js"></script>
+    <title>Angie Ladino</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <!-- Poner imagen logo -->
+            <img src="" alt="Logo" class="nav__logo">
+            <ul class="nav__menu">
+                <li class="nav__link"><a href=#home>Home</a></li>
+                <li class="nav__link"><a href=#about>About</a></li>
+                <li class="nav__link"><a href=#projects>Projects</a></li>
+                <li class="nav__link"><a href=#contact>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <!-- Poner imagen banner -->
+            <div><img src="" class="banner__img" alt="banner"> </div>
+            <p class="banner__text">
+                Hi, my name is Angie <span>Ladino</span>
+            </p>
+        </section>
+
+        <section class="about">
+            <h2 class="title about__title">About me</h2>
+            <!-- Poner foto pequeña -->
+            <img src="" class="about__img" alt="picture">
+            <p class="about__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptate totam, incidunt eaque natus cumque tempore quam assumenda rem doloribus temporibus, nobis rerum fugit? Iure necessitatibus quas expedita facere quia. Expedita explicabo quaerat
+                minus dolorum corporis cum adipisci, magni alias unde dolores nisi maiores odit ratione dicta soluta sunt mollitia praesentium. Veritatis aliquam delectus harum, sed fugiat accusantium labore nulla?
+            </p>
+            <input type="button" value="Download CV" class="button button--download" onclick="downloadCv()">
+        </section>
+
+        <section class="projects">
+            <h2 class="title projects__title">Projects</h2>
+            <div class=card>
+                <h3 class=card__title>
+                    Project 1
+                </h3>
+                <!-- Poner imagen del proyecto -->
+                <img src="" class="card__img" alt="picture">
+                <p class=card__description>
+                    Projects description
+                </p>
+                <input type="button" value="Demo" class="card__button card__button--demo" onclick="">
+                <input type="button" value="Code" class="card__button card__button--code" onclick="">
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2 class="title skills__title">Education and skills</h2>
+        </section>
+
+        <section class="contact">
+            <h2 class="title contact__title">Get in touch</h2>
+            <form id="contact-form" name="ContactForm">
+                <h3 class="contact__title form__title">Send me an email</h3>
+                <input required type="text" Name="name" placeholder="Name">
+                <input type="email" Name="email" placeholder="Email">
+                <input type="text" Name="subject" placeholder="Subject">
+                <input type="text" Name="message" placeholder="Message">
+                <input type="submit" value="Send message" class="button button--send" onclick="">
+            </form>
+            <div class="social-media">
+                <h3 class="contact__title social-media__title">Social Media</h3>
+                <i class="social-media__icon fab fa-facebook"></i>
+                <i class="social-media__icon fab fa-instagram"></i>
+                <i class="social-media__icon fab fa-linkedin"></i>
+                <i class="social-media__icon fab fa-github"></i>
+            </div>
+
+
+
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">
+            Created by Angie <span>Ladino</span> <br>2021
+        </p>
+    </footer>
+</body>
+
+
+</html>
