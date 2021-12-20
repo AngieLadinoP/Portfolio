@@ -7,6 +7,7 @@ $form.addEventListener("submit", handleSubmit)
 function handleSubmit(event) {
     event.preventDefault() /* Avoid reloading the page */
     const form = new FormData(this)
-    $mailTo.setAttribute("href", `mailto:agladinop@gmail.com?subject=${form.get("name")} - ${form.get("subject")} &body= ${form.get("email")} - ${form.get("message")}`)
-    $mailTo.click()
+    $mailTo.setAttribute("href", `mailto:agladinop@gmail.com?subject=${form.get("name")} - ${form.get("subject")} &body= ${form.get("email")} - ${form.get("message")}`);
+    $mailTo.click();
+    $form.reset();
 }
