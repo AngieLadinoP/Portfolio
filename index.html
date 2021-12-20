@@ -21,16 +21,16 @@
             <div class="nav__content">
                 <img class="nav__logo" src="./media/logo.png" alt="Logo">
                 <ul class="nav__menu">
-                    <div class="menu__icon menu__icon--close">
+                    <div class="menu__icon menu__icon--close" onclick="hideMenu()">
                         <i class="fas fa-times"></i>
                     </div>
-                    <li class="nav__menu--item"><a class="nav__menu--link" href=#home>Home</a></li>
-                    <li class="nav__menu--item"><a class="nav__menu--link" href=#about>About</a></li>
-                    <li class="nav__menu--item"><a class="nav__menu--link" href=#projects>Projects</a></li>
-                    <li class="nav__menu--item"><a class="nav__menu--link" href=#education>Education</a></li>
-                    <li class="nav__menu--item"><a class="nav__menu--link" href=#contact>Contact</a></li>
+                    <li class="nav__menu--item"><a class="nav__menu--link" href=#home onclick="hideMenu()">Home</a></li>
+                    <li class="nav__menu--item"><a class="nav__menu--link" href=#about onclick="hideMenu()">About</a></li>
+                    <li class="nav__menu--item"><a class="nav__menu--link" href=#projects onclick="hideMenu()">Projects</a></li>
+                    <li class="nav__menu--item"><a class="nav__menu--link" href=#education onclick="hideMenu()">Education</a></li>
+                    <li class="nav__menu--item"><a class="nav__menu--link" href=#contact onclick="hideMenu()">Contact</a></li>
                 </ul>
-                <div class="menu__icon menu__icon--hamburger">
+                <div class="menu__icon menu__icon--hamburger" onclick="showMenu()">
                     <i class="fas fa-bars"></i>
                 </div>
 
