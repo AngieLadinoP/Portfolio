@@ -8,4 +8,153 @@ font-family: "rubik", sans-serif;
         padding: 0;
         box-sizing: border-box;
         font-family: "rubik", sans-serif;
+        font-weight: lighter;
+        text-align: justify;
     }
+    
+    .container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        flex: wrap;
+    }
+    /* Banner */
+    
+    .title {
+        font-family: 'Playfair Display SC', serif;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .button {
+        background-color: #e71224;
+        color: white;
+        text-align: center;
+        border-radius: 25px;
+        border: 2px solid #e71224;
+    }
+    
+    .banner {
+        background-color: black;
+        height: 100vh;
+        background: url("./media/banner.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        align-items: end;
+    }
+    
+    .banner__text {
+        color: white;
+    }
+    
+    .banner__text--red {
+        font-family: 'Playfair Display SC', serif;
+        color: red;
+    }
+    /* About */
+    
+    .about__img {
+        width: 100px;
+        margin: auto;
+        border: 3px solid black;
+    }
+    
+    .about__img:hover {
+        border: 3px solid #e71224;
+    }
+    
+    .button--download,
+    .button--send {
+        width: 150px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    /* Projects */
+    
+    .card {
+        background: black;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        padding: 10px 10px;
+        border: 1px solid white;
+        width: 200px;
+    }
+    
+    .card__title {
+        font-family: 'Playfair Display SC', serif;
+    }
+    
+    .card__img {
+        width: 150px;
+        height: 200px;
+        margin: auto;
+        border: 3px solid #e71224;
+    }
+    
+    .card__button {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .card__button--demo,
+    .card__button--code {
+        margin: 5px;
+        width: 70px;
+        height: 25px;
+    }
+    /* Contact */
+    
+    .contact__title {
+        font-family: 'Playfair Display SC', serif;
+        text-align: center;
+    }
+    
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form__input {
+        border-radius: 10px;
+        margin: 5px;
+        padding: 5px 10px;
+        border: 2px solid #000000;
+    }
+    
+    .form__input--message {
+        height: 100px;
+    }
+    
+    #mail-to {
+        opacity: 0;
+    }
+    /* Footer */
+    
+    .footer {
+        background-color: black;
+        color: white;
+        padding: 10px;
+    }
+    
+    .footer__text {
+        text-align: center;
+    }
+    
+    .footer__text--red {
+        color: #e71224;
+    }
+    /*  Media queries  */
+    
+    @media (min-width: 700px) {}
