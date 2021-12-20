@@ -18,25 +18,34 @@
 <body>
     <header>
         <nav class="nav">
-            <!-- Poner imagen logo -->
-            <img src="" alt="Logo" class="nav__logo">
-            <ul class="nav__menu">
-                <li class="nav__link"><a href=#home>Home</a></li>
-                <li class="nav__link"><a href=#about>About</a></li>
-                <li class="nav__link"><a href=#projects>Projects</a></li>
-                <li class="nav__link"><a href=#contact>Contact</a></li>
-            </ul>
+            <div class="nav__content">
+                <img class="nav__logo" src="./media/logo.png" alt="Logo">
+                <ul class="nav__menu">
+                    <div class="menu__icon menu__icon--close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li class="nav__menu--item"><a class="nav__menu--link" href=#home>Home</a></li>
+                    <li class="nav__menu--item"><a class="nav__menu--link" href=#about>About</a></li>
+                    <li class="nav__menu--item"><a class="nav__menu--link" href=#projects>Projects</a></li>
+                    <li class="nav__menu--item"><a class="nav__menu--link" href=#education>Education</a></li>
+                    <li class="nav__menu--item"><a class="nav__menu--link" href=#contact>Contact</a></li>
+                </ul>
+                <div class="menu__icon menu__icon--hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="banner">
+        <section class="banner" id="home">
             <h2 class="title banner__text">
                 Hi, my name is Angie <span class="banner__text--red"> Ladino </span>
             </h2>
         </section>
 
-        <section class="about container">
+        <section class="about container" id="about">
             <h2 class="title about__title">About me</h2>
             <!-- Poner foto pequeña -->
             <img src="./media/picture.jpg" class="about__img" alt="picture">
@@ -47,7 +56,7 @@
             <input type="button" value="Download CV" class="button button--download" onclick="downloadCv()">
         </section>
 
-        <section class="projects container">
+        <section class="projects container" id="projects">
             <h2 class="title projects__title">Projects</h2>
             <div class=card>
                 <h4 class="card__title title3">
@@ -56,11 +65,11 @@
                 <!-- Poner imagen del proyecto -->
                 <img src="./media/project1.png" class="card__img" alt="picture">
                 <p class="card__description text">
-                    Projects description Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Tribute web page in honor of writer Fernando Soto Aparicio using <em>html</em> and <em>css</em>
                 </p>
                 <div class="card__button">
-                    <input type="button" value="Demo" class="button card__button--demo" onclick="">
-                    <input type="button" value="Code" class="button card__button--code" onclick="">
+                    <a href="https://pagina-web-tributo.netlify.app/" target="_blank"><input type="button" value="Demo" class="button card__button--demo" onclick=""></a>
+                    <a href="https://github.com/AngieLadinoP/Proyecto-web-tributo" target="_blank"><input type="button" value="Code" class="button card__button--code" onclick=""></a>
                 </div>
             </div>
             <div class=card>
@@ -70,11 +79,11 @@
                 <!-- Poner imagen del proyecto -->
                 <img src="./media/project1.png" class="card__img" alt="picture">
                 <p class="card__description text">
-                    Projects description Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    The traditional hangman game displayed with canvas, using <em>html</em>, <em>css</em> and <em>javascript</em>
                 </p>
                 <div class="card__button">
-                    <input type="button" value="Demo" class="button card__button--demo" onclick="">
-                    <input type="button" value="Code" class="button card__button--code" onclick="">
+                    <a href="https://juegoahorcadoprogramate.netlify.app/" target="_blank"><input type="button" value="Demo" class="button card__button--demo" onclick=""></a>
+                    <a href="https://github.com/AngieLadinoP/JuegoAhorcado" target="_blank"><input type="button" value="Code" class="button card__button--code" onclick=""></a>
                 </div>
             </div>
             <div class=card>
@@ -84,11 +93,11 @@
                 <!-- Poner imagen del proyecto -->
                 <img src="./media/project1.png" class="card__img" alt="picture">
                 <p class="card__description text">
-                    Projects description Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    The traditional tetris game developed with <em>html</em>, <em>css</em> and <em>javascript</em>
                 </p>
                 <div class="card__button">
-                    <input type="button" value="Demo" class="button card__button--demo" onclick="">
-                    <input type="button" value="Code" class="button card__button--code" onclick="">
+                    <a href="https://juegotetrisprogramate.netlify.app/" target="_blank"><input type="button" value="Demo" class="button card__button--demo" onclick=""></a>
+                    <a href="https://github.com/AngieLadinoP/juegoTetris" target="_blank"><input type="button" value="Code" class="button card__button--code" onclick=""></a>
                 </div>
             </div>
             <div class=card>
@@ -98,11 +107,11 @@
                 <!-- Poner imagen del proyecto -->
                 <img src="./media/project1.png" class="card__img" alt="picture">
                 <p class="card__description text">
-                    Projects description Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Functional calculator made with <em>html</em>, <em>css</em> and <em>javascript</em>
                 </p>
                 <div class="card__button">
-                    <input type="button" value="Demo" class="button card__button--demo" onclick="">
-                    <input type="button" value="Code" class="button card__button--code" onclick="">
+                    <a href="https://calculadora-programate.netlify.app/" target="_blank"><input type="button" value="Demo" class="button card__button--demo" onclick=""></a>
+                    <a href="https://github.com/AngieLadinoP/Calculadora" target="_blank"><input type="button" value="Code" class="button card__button--code" onclick=""></a>
                 </div>
             </div>
             <div class=card>
@@ -112,21 +121,21 @@
                 <!-- Poner imagen del proyecto -->
                 <img src="./media/project1.png" class="card__img" alt="picture">
                 <p class="card__description text">
-                    Projects description Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dungeon game made with <em>html</em> and <em>javascript</em>
                 </p>
                 <div class="card__button">
-                    <input type="button" value="Demo" class="button card__button--demo" onclick="">
-                    <input type="button" value="Code" class="button card__button--code" onclick="">
+                    <a href="https://mazmorra-programate.netlify.app/" target="_blank"><input type="button" value="Demo" class="button card__button--demo" onclick=""></a>
+                    <a href="https://github.com/AngieLadinoP/juegoLaberinto" target="_blank"><input type="button" value="Code" class="button card__button--code" onclick=""></a>
                 </div>
             </div>
 
         </section>
 
-        <section class="skills container">
+        <section class="skills container" id="education">
             <h2 class="title skills__title">Education and skills</h2>
         </section>
 
-        <section class="contact container">
+        <section class="contact container" id="contact">
             <h2 class="title contact__title">Get in touch</h2>
             <form class="contact-form" id="contact-form" action="">
                 <h3 class="form__title title2">Send me an email</h3>
