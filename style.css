@@ -51,6 +51,7 @@
         margin-left: 25px;
         text-decoration: none;
         transition: all 0.3s ease;
+        text-transform: uppercase;
     }
     
     .nav__menu--link:hover {
@@ -135,7 +136,7 @@
     
     .banner__text {
         color: white;
-        padding: 0 10px;
+        padding: 0 20px;
         flex: end;
     }
     
@@ -335,6 +336,7 @@
     
     .footer__text {
         text-align: center;
+        font-size: 18px;
     }
     
     .footer__text--red {
@@ -409,9 +411,13 @@
             font-size: 24px;
         }
         /* Banner */
-        .title,
+        .banner__text {
+            color: white;
+            padding: 0 100px;
+            flex: end;
+        }
         .banner__text--red {
-            font-size: 36px;
+            font-size: 48px;
         }
         .banner {
             align-items: center;
