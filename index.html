@@ -47,13 +47,12 @@
 
         <section class="about container" id="about">
             <h2 class="title about__title">About me</h2>
-            <!-- Poner foto pequeña -->
             <img src="./media/picture.jpg" class="about__img" alt="picture">
             <p class="about__text text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptate totam, incidunt eaque natus cumque tempore quam assumenda rem doloribus temporibus, nobis rerum fugit? Iure necessitatibus quas expedita facere quia. Expedita explicabo quaerat
-                minus dolorum corporis cum adipisci, magni alias unde dolores nisi maiores odit ratione dicta soluta sunt mollitia praesentium. Veritatis aliquam delectus harum, sed fugiat accusantium labore nulla?
+                My name is Angie Ladino, I'm a manager on my way to become a fullstack developer. My interest in web development started when I decided to try to materialize my business ideas and create applications to enhance the value of companies. <br>Currently
+                based in Bogota, Colombia. When I'm not coding, I'm geeking about soccer, films and exploring different ways of creating content.
             </p>
-            <input type="button" value="Download CV" class="button button--download" onclick="downloadCv()">
+            <input type="button" value="View CV" class="button button--download" onclick="goGoogleDrive()">
         </section>
 
         <section class="projects container" id="projects">
@@ -62,8 +61,7 @@
                 <h4 class="card__title title3">
                     Web tribute
                 </h4>
-                <!-- Poner imagen del proyecto -->
-                <img src="./media/project1.png" class="card__img" alt="picture">
+                <img src="./media/webtribute.jpg" class="card__img" alt="picture">
                 <p class="card__description text">
                     Tribute web page in honor of writer Fernando Soto Aparicio using <em>html</em> and <em>css</em>
                 </p>
@@ -76,8 +74,7 @@
                 <h4 class="card__title title3">
                     Hangman
                 </h4>
-                <!-- Poner imagen del proyecto -->
-                <img src="./media/project1.png" class="card__img" alt="picture">
+                <img src="./media/hangman.png" class="card__img" alt="picture">
                 <p class="card__description text">
                     The traditional hangman game displayed with canvas, using <em>html</em>, <em>css</em> and <em>javascript</em>
                 </p>
@@ -90,8 +87,7 @@
                 <h4 class="card__title title3">
                     Tetris
                 </h4>
-                <!-- Poner imagen del proyecto -->
-                <img src="./media/project1.png" class="card__img" alt="picture">
+                <img src="./media/tetris.png" class="card__img" alt="picture">
                 <p class="card__description text">
                     The traditional tetris game developed with <em>html</em>, <em>css</em> and <em>javascript</em>
                 </p>
@@ -104,8 +100,7 @@
                 <h4 class="card__title title3">
                     Calculator
                 </h4>
-                <!-- Poner imagen del proyecto -->
-                <img src="./media/project1.png" class="card__img" alt="picture">
+                <img src="./media/calculator.png" class="card__img" alt="picture">
                 <p class="card__description text">
                     Functional calculator made with <em>html</em>, <em>css</em> and <em>javascript</em>
                 </p>
@@ -118,8 +113,7 @@
                 <h4 class="card__title title3">
                     Dungeon
                 </h4>
-                <!-- Poner imagen del proyecto -->
-                <img src="./media/project1.png" class="card__img" alt="picture">
+                <img src="./media/dungeon.png" class="card__img" alt="picture">
                 <p class="card__description text">
                     Dungeon game made with <em>html</em> and <em>javascript</em>
                 </p>
@@ -131,8 +125,57 @@
 
         </section>
 
-        <section class="skills container" id="education">
-            <h2 class="title skills__title">Education and skills</h2>
+        <section class="education container" id="education">
+            <div class="education__studies">
+                <h2 class="title studies__title">Studies</h2>
+                <div class="education__icon education__icon--studies">
+                    <i class="fas fa-award"></i>
+                </div>
+                <ul class="studies__items">
+                    <ul>
+                        <li class="text studies__item--name">Bootcamp Prográmate</li>
+                        <li class="text studies__item--place">Educamás</li>
+                        <li class="text studies__item--time">In progres</li>
+                    </ul>
+                    <ul>
+                        <li class="text studies__item--name">Analysis and Development of Information Systems Technologist</li>
+                        <li class="text studies__item--place">SENA</li>
+                        <li class="text studies__item--time">In progres</li>
+                    </ul>
+                    <ul>
+                        <li class="text studies__item--name">Business Managemnent</li>
+                        <li class="text studies__item--place">Universidad Nacional de Colombia</li>
+                        <li class="text studies__item--time">2015-2020</li>
+                    </ul>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="skills container">
+            <h2 class="title skills__title">Skills</h2>
+            <div class="skills__languages">
+                <h3 class="title2 languajes__title">Languages</h3>
+                <div class="education__icon education__icon--languajes">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <ul class="languajes__items">
+                    <li class="text languajes__item">Spanish - Native</li>
+                    <li class="text languajes__item">English - B2</li>
+                    <li class="text languajes__item">German - B1</li>
+                </ul>
+            </div>
+            <div class="skills__web">
+                <h3 class="title2 web__title">Web development</h3>
+                <div class="education__icon education__icon--web">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <ul class="web__items">
+                    <li class="text web__item">HTML - Basic</li>
+                    <li class="text web__item">CSS - Basic</li>
+                    <li class="text web__item">JavaScript - Basic</li>
+                </ul>
+            </div>
         </section>
 
         <section class="contact container" id="contact">
@@ -150,6 +193,7 @@
             <div class="social-media">
                 <h3 class="social-media__title title2">Social Media</h3>
                 <div class="social-media__icon">
+                    <img class="blacklogo" src="./media/blacklogo.png" alt="Logo">
                     <a href="https://www.facebook.com/yanyaladino" target="_blank" class="icon__link icon__link1"><i class="icon fab fa-facebook"></i></a>
                     <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="icon__link icon__link2"><i class="icon fab fa-instagram"></i></a>
                     <a href="https://twitter.com/AngieLadino7" target="_blank" class="icon__link icon__link3"><i class="icon fab fa-twitter"></i></a>

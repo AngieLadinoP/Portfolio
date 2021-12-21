@@ -4,9 +4,14 @@
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
         font-weight: normal;
-        list-style: none;
     }
     /* Header */
+    
+    .nav__menu--item,
+    .studies__item--place,
+    .studies__item--time {
+        list-style: none;
+    }
     
     .nav {
         position: fixed;
@@ -77,6 +82,7 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
+        padding: 10px 0;
     }
     
     .title {
@@ -117,7 +123,7 @@
     /* Banner */
     
     .banner {
-        background-color: black;
+        background-color: rgb(160, 116, 116);
         height: 100vh;
         background: url("./media/banner.jpg") no-repeat;
         background-size: cover;
@@ -130,6 +136,7 @@
     .banner__text {
         color: white;
         padding: 0 10px;
+        flex: end;
     }
     
     .banner__text--red {
@@ -158,6 +165,16 @@
     }
     /* Projects */
     
+    .projects {
+        background: #000000;
+        width: 100%;
+    }
+    
+    .projects__title,
+    .skills__title {
+        color: white;
+    }
+    
     .card {
         background: black;
         display: flex;
@@ -176,7 +193,7 @@
         width: 150px;
         height: 200px;
         margin: auto;
-        border: 3px solid #e71224;
+        border: 3px solid white;
     }
     
     .card__button {
@@ -189,6 +206,42 @@
         margin: 5px;
         width: 70px;
         height: 25px;
+    }
+    /* Education */
+    
+    .education__icon {
+        font-size: 50px;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .education__icon:hover {
+        color: #e71224;
+    }
+    
+    .studies__item--name {
+        font-weight: bold;
+    }
+    
+    .skills {
+        background: #000000;
+        width: 100%;
+        color: white;
+    }
+    
+    .skills__languages,
+    .skills__web {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        padding: 10px 0;
+    }
+    
+    .languajes__title,
+    .web__title {
+        grid-column: 1/span 2;
+        grid-row: 1;
+        margin: auto;
     }
     /* Contact */
     
@@ -205,7 +258,6 @@
     .form__input {
         border-radius: 10px;
         margin: 5px;
-        padding: 5px 10px;
         border: 2px solid #000000;
     }
     
@@ -227,7 +279,7 @@
     }
     
     .icon__link {
-        font-size: 70px;
+        font-size: 50px;
         text-decoration: none;
         color: black;
         overflow: hidden;
@@ -237,6 +289,13 @@
     .icon__link:hover {
         color: #e71224;
         transform: scale(1.2);
+    }
+    
+    .blacklogo {
+        grid-column: 2;
+        grid-row: 2;
+        margin: auto;
+        width: 80px;
     }
     
     .icon__link1 {
@@ -397,13 +456,56 @@
         .card__button--code {
             font-size: 16px;
         }
-        .contact {
+        /* Education */
+        .fa-award {
+            font-size: 100px;
+        }
+        .education__icon {
+            font-size: 70px;
+        }
+        .education__studies {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 3fr;
+        }
+        .studies__title {
+            grid-column: 1/span 2;
+            grid-row: 1;
+            margin: auto;
+        }
+        .skills {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 2fr;
+        }
+        .skills__title {
+            grid-column: 1/span 2;
+            grid-row: 1;
+            margin: auto;
+        }
+        .skills__languages,
+        .skills__web {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 2fr;
         }
+        .languajes__title,
+        .web__title {
+            grid-column: 1/span 2;
+            grid-row: 1;
+            margin: auto;
+            padding: 0 0 20px 0;
+        }
+        /* Contact */
+        .contact {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 3fr;
+        }
         .contact__title {
             grid-column: 1/span 2;
             grid-row: 1;
+        }
+        .icon__link {
+            font-size: 60px;
         }
     }
