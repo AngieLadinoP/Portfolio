@@ -126,7 +126,8 @@
     .banner {
         background-color: rgb(160, 116, 116);
         height: 100vh;
-        background: url("./media/banner.jpg") no-repeat;
+        /* background: url("./media/banner1.png") no-repeat; */
+        background: #000000;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
