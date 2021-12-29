@@ -1,5 +1,3 @@
-/* $ as prefix when it is a DOM element */
-
 const body = document.querySelector("body");
 const nav = document.querySelector(".nav");
 const menu = document.querySelector(".nav__menu");
@@ -8,10 +6,22 @@ const closeButton = document.querySelector(".menu__icon--close");
 const form = document.querySelector("#contact-form");
 const mailTo = document.querySelector("#mail-to");
 form.addEventListener("submit", handleSubmit);
+let animated = document.querySelectorAll(".animated"); // Select all of the elements
 
 
-window.onscroll = function() {
-    this.scrollY > 20 ? nav.classList.add("sticky") : nav.classList.remove("sticky");
+
+
+// Show project cards
+function showCards() {
+    let scrollTop = document.documentElement.scrollTop;
+    //Detect distance from top to cards posittion in order to show the element. 
+    for (let i = 0; i < animated.length; i++) { // For every element that has the class "animated" 
+        let heightAnimated = animated[i].offsetTop; // Find said distance with offsetTop 
+        if (heightAnimated - 200 < scrollTop) {
+            animated[i].style.opacity = 1;
+            animated[i].classList.add("moveRight")
+        }
+    }
 }
 
 /* Show menu links */
@@ -43,4 +53,9 @@ function handleSubmit(event) {
     mailTo.setAttribute("href", `mailto:agladinop@gmail.com?subject=${forminfo.get("name")} - ${forminfo.get("subject")} &body= ${forminfo.get("email")} - ${forminfo.get("message")}`);
     mailTo.click();
     form.reset();
+}
+
+window.onscroll = function() {
+    this.scrollY > 20 ? nav.classList.add("sticky") : nav.classList.remove("sticky");
+    showCards();
 }
