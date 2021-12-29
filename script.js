@@ -17,7 +17,7 @@ function showCards() {
     //Detect distance from top to cards posittion in order to show the element. 
     for (let i = 0; i < animated.length; i++) { // For every element that has the class "animated" 
         let heightAnimated = animated[i].offsetTop; // Find said distance with offsetTop 
-        if (heightAnimated - 200 < scrollTop) {
+        if (heightAnimated - 300 < scrollTop) {
             animated[i].style.opacity = 1;
             animated[i].classList.add("moveRight")
         }
